@@ -1,0 +1,9 @@
+enablePlugin: true
+#true - Использовать часовой таймер
+#false - Использовать таймер на количестве памяти сервера
+usingTimer: true
+#Restart time
+sec: 0
+min: 30
+hour: 0
+RestartMessage: "Сервер перезапускается!"

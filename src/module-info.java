@@ -1,0 +1,3 @@
+module SimpleAutoRestart {
+	requires spigot;
+}

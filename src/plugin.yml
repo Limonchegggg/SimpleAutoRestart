@@ -1,0 +1,18 @@
+name: SimpleAutoRestart
+main: Main.Main
+version: 0.0.1
+api-version: 1.16
+author: Limonchegggg#5387
+commands:
+    createMessage:
+      description: Создание сообщений
+      permission: SimpleAutoRestart.messages
+    memory:
+      description: Показывает заполненость сервера
+      permission: SimpleAutoRestart.memory
+
+permissions:
+    SimpleAutoRestart.messages:
+      description: Создание сообщений
+    SimpleAutoRestart.memory:
+      description: Просмотр состояния сервера
