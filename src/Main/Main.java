@@ -8,12 +8,8 @@ public class Main extends JavaPlugin{
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
 		getServer().getPluginCommand("createMessage").setExecutor(new createMessage());
-		getServer().getPluginCommand("memory").setExecutor(new memory());
-		if(getConfig().getBoolean("usingTimer")) {
-			new Timer();
-		}else {
-			new TimerMemory();
-		}
+		getServer().getPluginCommand("restartInfo").setExecutor(new restartInfo());
+		new Timer();
 		
 	}
 	@Override

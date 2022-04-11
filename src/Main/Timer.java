@@ -11,7 +11,7 @@ public class Timer {
 	private Messages msg = new Messages();
 	private ConfigGetter cg = new ConfigGetter();
 	private Main main = Main.getPlugin(Main.class);
-	private int finalTime = cg.RestartTime();
+	public int finalTime = cg.RestartTime();
 	private int a = 10;
 	public Timer() {
 		new BukkitRunnable() {
@@ -43,5 +43,8 @@ public class Timer {
 				}
 			}
 		}.runTaskTimer(main, 20L, 20L);
+	}
+	public int getRestartTime() {
+		return finalTime;
 	}
 }

@@ -7,28 +7,28 @@ import org.bukkit.plugin.Plugin;
 public class ConfigGetter{
 	Plugin plugin = Main.getPlugin(Main.class);
 	
-	public int getSecondTime() {
+	public int getSecond() {
 		return plugin.getConfig().getInt("sec");
 	}
 	
-	public int getMinuteTime() {
+	public int getMinute() {
 		return plugin.getConfig().getInt("min");
 	}
 	
-	public int getHourTime() {
+	public int getHour() {
 		return plugin.getConfig().getInt("hour");
 	}
 	
 	public int MinInSec() {
-		return getMinuteTime()*60;
+		return getMinute()*60;
 	}
 	
 	public int HoursInSec() {
-		return getHourTime()*3600;
+		return getHour()*3600;
 	}
 	
 	public int SecInTick() {
-		return getSecondTime()*20;
+		return getSecond()*20;
 	}
 	//Получение остатка времени
 	public int leftTimeMessage() {
@@ -37,11 +37,10 @@ public class ConfigGetter{
 	}
 	//Полное время
 	public int RestartTime() {
-		return getSecondTime() + MinInSec() + HoursInSec();
+		return getSecond() + MinInSec() + HoursInSec();
 	}
 	//Получение таймера
 	public boolean getBooleanTimer() {
 		return plugin.getConfig().getBoolean("usingTimer");
 	}
-
 }
