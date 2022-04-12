@@ -7,12 +7,12 @@ commands:
     createMessage:
       description: Создание сообщений
       permission: SimpleAutoRestart.messages
-    memory:
-      description: Показывает заполненость сервера
-      permission: SimpleAutoRestart.memory
+    restartInfo:
+      description: Просмотр оставшегося времени до рестарта
+      permission: SimpleAutoRestart.restartInfo
 
 permissions:
     SimpleAutoRestart.messages:
       description: Создание сообщений
-    SimpleAutoRestart.memory:
+    SimpleAutoRestart.restartInfo:
       description: Просмотр состояния сервера
