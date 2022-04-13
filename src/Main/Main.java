@@ -8,7 +8,7 @@ public class Main extends JavaPlugin{
 		getConfig().options().copyDefaults(true);
 		saveDefaultConfig();
 		getServer().getPluginCommand("createMessage").setExecutor(new createMessage());
-		getServer().getPluginCommand("restartInfo").setExecutor(new restartInfo());
+		getServer().getPluginCommand("timeleft").setExecutor(new restartInfo());
 		new Timer();
 		
 	}

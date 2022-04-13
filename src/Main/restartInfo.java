@@ -14,7 +14,7 @@ public class restartInfo implements CommandExecutor {
 			return false;
 		}
 		TimeConvert tc = new TimeConvert(t.getLeftTime());
-		sender.sendMessage(ChatColor.YELLOW + "До рестарта осталось " + ChatColor.GOLD + tc.getHour() + " часов" + tc.getMinute() + " минут" + tc.getSecond() + " секунд");
+		sender.sendMessage(ChatColor.YELLOW + "До рестарта осталось " + ChatColor.GOLD + tc.getHour() + " часов " + tc.getMinute() + " минут " + tc.getSecond() + " секунд ");
 		return true;
 	}
 

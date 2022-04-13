@@ -45,6 +45,6 @@ public class Timer {
 		}.runTaskTimer(main, 20L, 20L);
 	}
 	public int getLeftTime() {
-		return finalTime;
+		return (finalTime-time);
 	}
 }

@@ -7,7 +7,7 @@ commands:
     createMessage:
       description: Создание сообщений
       permission: SimpleAutoRestart.messages
-    restartInfo:
+    timeleft:
       description: Просмотр оставшегося времени до рестарта
       permission: SimpleAutoRestart.restartInfo
 
