@@ -1,8 +1,11 @@
 package Main;
 
+import java.util.ArrayList;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin{
+	public ArrayList<String> task = new ArrayList<String>();
 	@Override
 	public void onEnable() {
 		getConfig().options().copyDefaults(true);
